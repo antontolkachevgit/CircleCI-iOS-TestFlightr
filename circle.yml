@@ -1,23 +1,17 @@
 
-
 machine:
   xcode:
     version: 8.2
-
   environment:
-    XCODE_SCHEME: CircleCI-Sample
-    XCODE_WORKSPACE: CircleCI-Sample.xcworkspace
-    CODE_SIGNING_IDENTITY: 'iPhone Developer: Vadim Kastritsky (23V8GT7RMV)'
-    APPNAME: CircleCI-Sample
-    PROFILE_UUID: 1e31620a-a485-4f0e-b343-471ea6f1767e
+    GYM_CODE_SIGNING_IDENTITY: 'iPhone Developer: Vadim Kastritsky (23V8GT7RMV)'
+ 
 dependencies:
   override:
     - pod install:
         timeout: 1300
 deployment:
-  testflight:
+  staging:
     branch: master
     commands:
-      - ./scripts/add-key.sh
-      - ./scripts/testflight.sh
-      - ./scripts/remove-key.sh
+      - gym
+      - ipa distribute:itunesconnect -i 8675309 --upload --verbose
