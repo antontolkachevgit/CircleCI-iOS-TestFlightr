@@ -1,5 +1,4 @@
-general:
-  build_dir: ios-app
+
 
 machine:
   xcode:
