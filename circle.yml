@@ -7,7 +7,7 @@ machine:
   environment:
     XCODE_SCHEME: CircleCI-Sample
     XCODE_WORKSPACE: CircleCI-Sample.xcworkspace
-    GYM_CODE_SIGNING_IDENTITY: 'iPhone Developer: Vadim Kastritsky (23V8GT7RMV)'
+    CODE_SIGNING_IDENTITY: 'iPhone Developer: Vadim Kastritsky (23V8GT7RMV)'
     APPNAME: CircleCI-Sample
     PROFILE_UUID: 1e31620a-a485-4f0e-b343-471ea6f1767e
 dependencies:
