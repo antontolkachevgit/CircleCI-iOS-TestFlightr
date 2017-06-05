@@ -4,7 +4,7 @@ PROVISIONING_PROFILE="$HOME/Library/MobileDevice/Provisioning Profiles/$PROFILE_
 RELEASE_DATE=`date '+%Y-%m-%d %H:%M:%S'`
 ARCHIVE_PATH="$PWD/build.xcarchive"
 APP_DIR="$ARCHIVE_PATH/Products/Applications"
-#DSYM_DIR="$ARCHIVE_PATH/dSYMs"
+DSYM_DIR="$ARCHIVE_PATH/dSYMs"
 
 echo "********************"
 echo "*     Archive      *"
