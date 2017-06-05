@@ -8,7 +8,6 @@ machine:
     DEVELOPER_NAME: 'iPhone Developer: Vadim Kastritsky (23V8GT7RMV)'
     APPNAME: CircleCI-Sample
     PROFILE_UUID: 1e31620a-a485-4f0e-b343-471ea6f1767e
-    TESTFLIGHT_DIST_LIST: CircleTest T
 dependencies:
   override:
     - pod install:
