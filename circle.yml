@@ -14,4 +14,4 @@ deployment:
     branch: master
     commands:
       - gym
-      - ipa distribute:itunesconnect -i 8675309 --upload --verbose
+      - ipa distribute:itunesconnect -i 1244713844 --upload --verbose
