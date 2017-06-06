@@ -9,5 +9,5 @@ deployment:
   staging:
     branch: master
     commands:
-      - fastlane gym --scheme "CircleCI-Sample" --workspace "CircleCI-Sample.xcworkspace"
+      - fastlane gym
       - ipa distribute:itunesconnect -i 1244713844 --upload --verbose
