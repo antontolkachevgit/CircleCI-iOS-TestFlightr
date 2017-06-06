@@ -3,13 +3,8 @@ machine:
   xcode:
     version: 8.2
   environment:
-    GYM_CODE_SIGNING_IDENTITY: 'iPhone Developer: Vadim Kastritsky (23V8GT7RMV)'
-    XCODE_SCHEME: CircleCI-Sample
- 
-dependencies:
-  override:
-    - pod install:
-        timeout: 1300
+    GYM_CODE_SIGNING_IDENTITY: 'iPhone Distribution: Armsis (26K5BMR3ML)'
+    
 deployment:
   staging:
     branch: master

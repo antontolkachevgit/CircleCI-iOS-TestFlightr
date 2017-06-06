@@ -65,6 +65,19 @@ platform :ios do
   end
 end
 
+lane :beta do
+  sigh
+  gym
+
+  # You can use any beta testing service below:
+  pilot # (TestFlight)
+  crashlytics
+  hockey
+  s3
+  deploygate
+  ...
+end
+
 
 # More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
 # All available actions: https://docs.fastlane.tools/actions
