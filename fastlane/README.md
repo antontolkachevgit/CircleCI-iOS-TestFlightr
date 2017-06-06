@@ -30,23 +30,16 @@ xcode-select --install
 
 # Available Actions
 ## iOS
-### ios test
+### ios provision
 ```
-fastlane ios test
+fastlane ios provision
 ```
-Runs all the tests
-### ios beta
+Creating a code signing certificate and provisioning profile
+### ios build
 ```
-fastlane ios beta
+fastlane ios build
 ```
-Submit a new Beta Build to Apple TestFlight
-
-This will also make sure the profile is up to date
-### ios release
-```
-fastlane ios release
-```
-Deploy a new version to the App Store
+Create ipa
 
 ----
 
